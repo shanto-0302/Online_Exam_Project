@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnlineExamSystemModelStoreContainer" CdmEntityContainer="OnlineExamSystemEntities">
+    <EntitySetMapping Name="Level1">
+      <EntityTypeMapping TypeName="OnlineExamSystemModel.Level1">
+        <MappingFragment StoreEntitySet="Level1">
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="Qno" ColumnName="Qno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Level2">
+      <EntityTypeMapping TypeName="OnlineExamSystemModel.Level2">
+        <MappingFragment StoreEntitySet="Level2">
+          <ScalarProperty Name="Qno" ColumnName="Qno" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Level3">
+      <EntityTypeMapping TypeName="OnlineExamSystemModel.Level3">
+        <MappingFragment StoreEntitySet="Level3">
+          <ScalarProperty Name="Qno" ColumnName="Qno" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Level4">
+      <EntityTypeMapping TypeName="OnlineExamSystemModel.Level4">
+        <MappingFragment StoreEntitySet="Level4">
+          <ScalarProperty Name="Qno" ColumnName="Qno" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

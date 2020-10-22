@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineExamSystemModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="OnlineExamSystemModelStoreContainer">
+    <EntitySet Name="Level1" EntityType="OnlineExamSystemModel.Store.Level1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Level2" EntityType="OnlineExamSystemModel.Store.Level2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Level3" EntityType="OnlineExamSystemModel.Store.Level3" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Level4" EntityType="OnlineExamSystemModel.Store.Level4" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Level1">
+    <Key>
+      <PropertyRef Name="Qno" />
+    </Key>
+    <Property Name="Question" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Option1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Level2">
+    <Key>
+      <PropertyRef Name="Qno" />
+    </Key>
+    <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Question" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Option1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Level3">
+    <Key>
+      <PropertyRef Name="Qno" />
+    </Key>
+    <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Question" Type="nvarchar(max)" />
+    <Property Name="Option1" Type="nvarchar(max)" />
+    <Property Name="Option2" Type="nvarchar(max)" />
+    <Property Name="Option3" Type="nvarchar(max)" />
+    <Property Name="Option4" Type="nvarchar(max)" />
+    <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Level4">
+    <Key>
+      <PropertyRef Name="Qno" />
+    </Key>
+    <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Question" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Option4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>

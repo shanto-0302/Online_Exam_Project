@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="onlineExamSystem.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/BeforeLogin.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:blue">
+    <form runat="server">
+    <div class="d" style="background-color: #99CCFF ;">
+        <div class="header">
+            <div class="title">
+                <h1>
+                   Online Examination System
+                </h1>
+               
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="LoginView1" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                         <a href="Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> 
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction= "RedirectToLoginPage" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                 <img src="images/cover.jpg" alt="Sorry"  /> 
+            </div>
+            </div>
+            
+                
+                 
+            
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                        <asp:MenuItem NavigateUrl="~/help.aspx" Text="Help"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main" style="background-color: #FF99FF; color: #000000; margin-left:170;margin-right:170">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </br></br>
+            </br></br></br></br>
+            </br></br>   </br></br>
+            </br></br></br></br>
+            </br></br> </br></br>
+        </div>
+        
+        <div class="clear">
+        </div>
+    
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

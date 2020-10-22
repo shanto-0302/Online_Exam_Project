@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OnlineExamSystemModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="OnlineExamSystemModelStoreContainer">
+          <EntitySet Name="Level1" EntityType="OnlineExamSystemModel.Store.Level1" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Level2" EntityType="OnlineExamSystemModel.Store.Level2" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Level3" EntityType="OnlineExamSystemModel.Store.Level3" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Level4" EntityType="OnlineExamSystemModel.Store.Level4" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Level1">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Question" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Option1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Level2">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Option1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Level3">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="nvarchar(max)" />
+          <Property Name="Option1" Type="nvarchar(max)" />
+          <Property Name="Option2" Type="nvarchar(max)" />
+          <Property Name="Option3" Type="nvarchar(max)" />
+          <Property Name="Option4" Type="nvarchar(max)" />
+          <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Level4">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Qno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Option4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Answer" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OnlineExamSystemModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="OnlineExamSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Level1" EntityType="OnlineExamSystemModel.Level1" />
+          <EntitySet Name="Level2" EntityType="OnlineExamSystemModel.Level2" />
+          <EntitySet Name="Level3" EntityType="OnlineExamSystemModel.Level3" />
+          <EntitySet Name="Level4" EntityType="OnlineExamSystemModel.Level4" />
+        </EntityContainer>
+        <EntityType Name="Level1">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Question" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Answer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Qno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Level2">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Qno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Answer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Level3">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Qno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Option1" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Option2" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Option3" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Option4" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Answer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Level4">
+          <Key>
+            <PropertyRef Name="Qno" />
+          </Key>
+          <Property Name="Qno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Option4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Answer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OnlineExamSystemModelStoreContainer" CdmEntityContainer="OnlineExamSystemEntities">
+          <EntitySetMapping Name="Level1">
+            <EntityTypeMapping TypeName="OnlineExamSystemModel.Level1">
+              <MappingFragment StoreEntitySet="Level1">
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="Qno" ColumnName="Qno" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Level2">
+            <EntityTypeMapping TypeName="OnlineExamSystemModel.Level2">
+              <MappingFragment StoreEntitySet="Level2">
+                <ScalarProperty Name="Qno" ColumnName="Qno" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Level3">
+            <EntityTypeMapping TypeName="OnlineExamSystemModel.Level3">
+              <MappingFragment StoreEntitySet="Level3">
+                <ScalarProperty Name="Qno" ColumnName="Qno" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Level4">
+            <EntityTypeMapping TypeName="OnlineExamSystemModel.Level4">
+              <MappingFragment StoreEntitySet="Level4">
+                <ScalarProperty Name="Qno" ColumnName="Qno" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="OnlineExamSystemModel.Level1" Width="1.5" PointX="0.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamSystemModel.Level2" Width="1.5" PointX="2.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamSystemModel.Level3" Width="1.5" PointX="4.75" PointY="0.75" Height="2.3648893229166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineExamSystemModel.Level4" Width="1.5" PointX="0.75" PointY="4.75" Height="2.3648893229166656" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

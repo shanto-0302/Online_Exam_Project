@@ -1,0 +1,10 @@
+C:\Users\Shanto\Documents\Visual Studio 2010\Projects\onlineExamSystem\BusinessObject\bin\BusinessObject.dll
+C:\Users\Shanto\Documents\Visual Studio 2010\Projects\onlineExamSystem\BusinessObject\bin\BusinessObject.pdb
+C:\Users\Shanto\Documents\Visual Studio 2010\Projects\onlineExamSystem\BusinessObject\obj\Debug\BusinessObject.dll
+C:\Users\Shanto\Documents\Visual Studio 2010\Projects\onlineExamSystem\BusinessObject\obj\Debug\BusinessObject.pdb
+C:\Users\Shanto\Documents\Visual Studio 2010\Projects\onlineExamSystem\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+E:\BSC Projects\onlineExamSystem\onlineExamSystem\BusinessObject\bin\BusinessObject.dll
+E:\BSC Projects\onlineExamSystem\onlineExamSystem\BusinessObject\bin\BusinessObject.pdb
+E:\BSC Projects\onlineExamSystem\onlineExamSystem\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+E:\BSC Projects\onlineExamSystem\onlineExamSystem\BusinessObject\obj\Debug\BusinessObject.dll
+E:\BSC Projects\onlineExamSystem\onlineExamSystem\BusinessObject\obj\Debug\BusinessObject.pdb
